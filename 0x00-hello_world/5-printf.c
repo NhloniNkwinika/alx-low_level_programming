@@ -1,4 +1,8 @@
 #include <stdio.h>
+/**
+ * main - this program prints a string using the printf function
+ * return: 0 (Success)
+ */
 
 int main(void)
 {
