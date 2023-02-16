@@ -1,4 +1,4 @@
-#include <stdio>
+#include <stdio.h>
 /**
  * main - this program prints the varios types on the computer it is compiled and run on
  * Return: 0 (Sucess)
