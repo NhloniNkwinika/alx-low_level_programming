@@ -1,33 +1,21 @@
 #include <stdio.h>
 #include <time.h>
+#include <stdlib.h>
 /**
- * main - This program get the current time and generates a random integer
- * Return 0 (Success)
+ * main - This program assigns a random number to int n everytime 
+ * it executes and prints it
+ * Return: Always 0 (Success)
  */
-
-int main(void)
+int main (void)
 {
-  int n;
-  time_t t;
-  srand((unsigned) time(&t)); 
-
-  n = (rand() % 200) - 100; 
-
-  printf("%d ", n);
-
-  if (n > 0)
-  {
-    printf("is positive\n");
-  }
-  else if (n == 0)
-  {
-    printf("is zero\n");
-  }
-  else
-  {
-    printf("is negative\n");
-  }
-
-  return 0;
+	int n;
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	if (n > 0)
+		printf("%d is positive\n", n);
+	else if (n == 0)
+		printf("%d is zero\n", n);
+	else if (n < 0)
+		printf("%d is negetive\n", n);
+	return (0);
 }
-
